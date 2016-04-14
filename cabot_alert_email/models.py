@@ -18,7 +18,7 @@ Passing checks:{% for check in service.all_passing_checks %}
 
 class EmailSPAlert(AlertPlugin):
 
-    name = "Email"
+    name = "SP Email"
     author = "Roman Kournjaev"
 
     def send_alert(self, service, users, duty_officers):
