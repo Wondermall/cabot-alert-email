@@ -18,6 +18,9 @@ Passing checks:{% for check in service.all_passing_checks %}
 
 class EmailSPAlert(AlertPlugin):
 
+    name = "Email"
+    author = "Roman Kournjaev"
+
     def send_alert(self, service, users, duty_officers):
         emails = [u.email for u in users if u.email]
         if not emails:
