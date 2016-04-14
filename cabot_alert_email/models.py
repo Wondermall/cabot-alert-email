@@ -38,7 +38,7 @@ class EmailSPAlert(AlertPlugin):
             'scheme': settings.WWW_SCHEME
         })
         sp = SparkPost(env.get('SPARKPOST_API_KEY'))
-
+        t = Template(email_template)
         response = sp.transmissions.send(
             recipients=emails,
             text=t.render(c),
