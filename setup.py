@@ -2,7 +2,7 @@
 
 from setuptools import setup, find_packages
 
-setup(name='cabot_alert_email_sp',
+setup(name='cabot-alert-email-sp',
       version='0.1.0',
       description='An email alert plugin for Cabot by Wondermall Using SparkPost Email Service',
       author='Roman Kournajev',

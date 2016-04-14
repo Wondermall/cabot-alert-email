@@ -34,8 +34,8 @@ class EmailSPAlert(AlertPlugin):
 
         response = sp.transmissions.send(
             recipients=emails,
-            html='<p>Hello {{name}}</p>',
-            text='Hello {{name}}',
+            html=email_template,
+            text=email_template,
             from_email='Cabot <%s>' % env.get('CABOT_FROM_EMAIL'),
             subject=subject,
             metadata={
