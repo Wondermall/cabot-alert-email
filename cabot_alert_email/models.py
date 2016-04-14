@@ -44,6 +44,8 @@ class EmailSPAlert(AlertPlugin):
             text=t.render(c),
             from_email='Cabot <%s>' % env.get('CABOT_FROM_EMAIL'),
             subject=subject,
+            track_opens=False,
+            track_clicks=False,
             reply_to='no-reply@int.wmmails.com'
         )
         logging.info(response)
