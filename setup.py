@@ -2,12 +2,12 @@
 
 from setuptools import setup, find_packages
 
-setup(name='cabot-alert-email',
-      version='1.3.1',
-      description='An email alert plugin for Cabot by Arachnys',
-      author='Arachnys',
-      author_email='info@arachnys.org',
+setup(name='cabot-alert-email-sp',
+      version='0.1.0',
+      description='An email alert plugin for Cabot by Wondermall Using SparkPost Email Service',
+      author='Roman Kournajev',
+      author_email='kournjaev@gmail.com',
       url='http://cabotapp.com',
       packages=find_packages(),
-      download_url= 'https://github.com/bonniejools/cabot-alert-email/tarball/1.3.1',
+      download_url= 'https://github.com/Wondermall/cabot-alert-email/tarball/0.1.0',
      )
